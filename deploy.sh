@@ -6,12 +6,18 @@ set -e
 # 生成静态文件
 npm run docs:build
 
+# 上传源码
+git add -A
+git commit -m 'feat: auto update blog'
+git push origin main
+
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
+# 部属博客到 GitHub
 git init
 git add -A
 git commit -m 'auto deploy'

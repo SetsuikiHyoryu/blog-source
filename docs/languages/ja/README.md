@@ -5,7 +5,7 @@ description: 概要
 
 # 概要
 
-これは [VuePress](https://v2.vuepress.vuejs.org/) で構築したブログである。
+これは [VuePress](https://v2.vuepress.vuejs.org/) で構築した個人ブログである。
 
 ## 自己紹介
 
