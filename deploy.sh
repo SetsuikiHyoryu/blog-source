@@ -8,7 +8,7 @@ npm run docs:build
 
 # 上传源码
 git add -A
-git commit -m 'feat: auto update blog'
+git commit -m 'feat: update blog'
 git push origin main
 
 # 进入生成的文件夹
