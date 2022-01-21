@@ -1,9 +1,6 @@
 ---
 lang: ja
 description: 概要
-home: true
-heroText: null
-tagline: null
 ---
 
 # 概要
@@ -23,7 +20,7 @@ tagline: null
 - weibo: [@雪域冰龍_OTONA](https://weibo.com/u/1772638883)（BAN された）
 - twitter: [@SETSUIKI_HYORYU](https://twitter.com/Setsuiki_Hyoryu)
 - bilibili: <https://space.bilibili.com/262993>
-- youtube: <https://www.youtube.com/channel/UCUeg9mYxtAp3ZqHfahPAPbQ/featured>
+- youtube: [https://www.youtube.com/channel/UCU...](https://www.youtube.com/channel/UCUeg9mYxtAp3ZqHfahPAPbQ/featured)
 - github: <https://github.com/SetsuikiHyoryu>
 
 ## 政治思想

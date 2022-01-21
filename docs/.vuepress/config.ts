@@ -6,6 +6,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   port: 19769,
   lang: 'zh-CN',
   title: '冰龍與雪風的工作室',
+  head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
 
   plugins: [['@vuepress/plugin-search', true]],
 
@@ -16,7 +17,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       description: '个人博客',
     },
 
-    '/multiple-languages/ja/': {
+    '/languages/ja/': {
       lang: 'ja',
       description: '個人ブログ',
     },
@@ -27,68 +28,86 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   themeConfig: {
     logo: '/images/logo.png',
-
     repo: 'https://github.com/SetsuikiHyoryu/blog-source',
 
     locales: {
       '/': {
         selectLanguageName: '简体中文',
 
-        navbar: [
-          { text: '文章一览', link: '/article-index.md' },
+        sidebar: {
+          '/': [
+            '/',
 
+            {
+              text: '编程',
+              collapsible: true,
+              children: ['/programming/programming-languages/'],
+            },
+
+            {
+              text: '马克思主义',
+              collapsible: true,
+              children: [],
+            },
+          ],
+        },
+
+        navbar: [
           {
-            text: '编程',
+            text: '文章',
 
             children: [
               {
-                text: '前端',
-                children: [
-                  {
-                    text: 'TypeScript',
-                    link: '/programming/frontend/typescript/index.md',
-                  },
-                ],
+                text: '编程',
+                children: ['/programming/programming-languages/'],
               },
 
               {
-                text: '后端',
-                children: [
-                  { text: 'Go', link: '/programming/backend/go/index.md' },
-                ],
+                text: '马克思主义',
+                children: [],
               },
             ],
           },
         ],
+      },
+
+      '/languages/ja/': {
+        selectLanguageName: '日本語',
 
         sidebar: {
-          '/': [
-            {
-              text: '编程',
-              collapsible: true,
+          '/languages/ja/': [
+            './',
 
-              children: [
-                { text: '前端', link: '/programming/frontend/' },
-                { text: '后端', link: '/programming/backend/' },
-              ],
+            {
+              text: 'プログラミング',
+              collapsible: true,
+              children: ['./programming/programming-languages/'],
             },
-          ],
 
-          '/programming/frontend/': [
             {
-              text: 'TypeScript',
+              text: 'マルクス主義',
               collapsible: true,
-              children: ['/programming/frontend/typescript/sample.md'],
+              children: [],
             },
           ],
         },
-      },
-
-      '/multiple-languages/ja/': {
-        selectLanguageName: '日本語',
 
         navbar: [
-          { text: '文章一覧', link: '/multiple-languages/ja/article-index.md' },
+          {
+            text: '文章',
+
+            children: [
+              {
+                text: 'プログラミング',
+                children: ['/languages/ja/programming/programming-languages/'],
+              },
+
+              {
+                text: 'マルクス主義',
+                children: [],
+              },
+            ],
+          },
         ],
       },
     },
