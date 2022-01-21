@@ -1,23 +1,23 @@
 ---
-lang: zh-CH
-description: 简介
+lang: ja
+description: 概要
 ---
 
-# 简介
+# 概要
 
-这是一个使用 [VuePress](https://v2.vuepress.vuejs.org/zh/) 构建的个人博客。
+これは [VuePress](https://v2.vuepress.vuejs.org/zh/) で構築したブログである。
 
-## 自我介绍
+## 自己紹介
 
-出身于中国上海。  
-马克思主义政治经济学 ☭  
-喵玉殿汉化组 | OTONA 汉化组 | 码农  
+中国・上海出身。  
+マルクス主義政治経済学 ☭  
+喵玉殿漢化組 | OTONA 漢化組 | ソフトエンジニア
 
 國際悲歌歌一曲，狂飆爲我從天落！
 
-## 社交媒体
+## 社交メディア
 
-- weibo: [@雪域冰龍_OTONA](https://weibo.com/u/1772638883)（已被封禁）
+- weibo: [@雪域冰龍_OTONA](https://weibo.com/u/1772638883)（BAN された）
 - twitter: [@SETSUIKI_HYORYU](https://twitter.com/Setsuiki_Hyoryu)
 - bilibili: <https://space.bilibili.com/262993>
 - youtube: <https://www.youtube.com/channel/UCUeg9mYxtAp3ZqHfahPAPbQ/featured>
