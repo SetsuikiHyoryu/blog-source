@@ -25,4 +25,4 @@ description: 概要
 
 ## 政治思想
 
-![PolitiScales](https://pbs.twimg.com/media/DWpr15FVQAAYBUq?format=jpg&name=medium)
+![PolitiScales](/images/politiscales.png)

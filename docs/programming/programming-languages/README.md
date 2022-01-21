@@ -17,4 +17,4 @@ sidebar:
 
 ## Go
 
-- [sample](/go/sample.md)
+- [sample](./go/sample.md)
