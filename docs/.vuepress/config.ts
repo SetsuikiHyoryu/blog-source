@@ -31,7 +31,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
     ],
 
-    repo: 'https://github.com/SetsuikiHyoryu/SetsuikiHyoryu.github.io',
+    repo: 'https://github.com/SetsuikiHyoryu/blog-source',
 
     sidebar: {
       '/': ['/README.md', 'sample.md'],
