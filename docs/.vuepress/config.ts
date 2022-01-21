@@ -22,7 +22,18 @@ export default defineUserConfig<DefaultThemeOptions>({
   theme: '@vuepress/theme-default',
 
   themeConfig: {
-    // logo: 'https://vuejs.org/images/logo.png',
+    logo: '/images/logo.png',
+
+    navbar: [
+      {
+        text: 'Sample',
+        link: '/sample.md',
+      },
+    ],
+
+    repo: 'https://github.com/SetsuikiHyoryu/SetsuikiHyoryu.github.io',
+
+    sidebar: ['/README.md', '/sample.md'],
 
     locales: {
       '/': {
