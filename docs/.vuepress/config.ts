@@ -33,7 +33,10 @@ export default defineUserConfig<DefaultThemeOptions>({
 
     repo: 'https://github.com/SetsuikiHyoryu/SetsuikiHyoryu.github.io',
 
-    sidebar: ['/README.md', '/sample.md'],
+    sidebar: {
+      '/': ['/README.md', 'sample.md'],
+      '/ja/': ['/ja/README.md', '/ja/sample.md'],
+    },
 
     locales: {
       '/': {
