@@ -1,6 +1,9 @@
 ---
 lang: zh-CH
 description: 简介
+home: true
+heroText: null
+tagline: null
 ---
 
 # 简介

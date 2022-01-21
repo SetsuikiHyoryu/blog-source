@@ -1,6 +1,9 @@
 ---
 lang: ja
 description: 概要
+home: true
+heroText: null
+tagline: null
 ---
 
 # 概要

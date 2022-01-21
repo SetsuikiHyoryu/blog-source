@@ -4,7 +4,7 @@
   "description": "个人博客",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs --port 19769",
+    "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,7 @@
   "author": "雪域冰龍",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.33",
     "vuepress": "^2.0.0-beta.33"
   }
 }
