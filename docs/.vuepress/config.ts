@@ -41,7 +41,11 @@ export default defineUserConfig<DefaultThemeOptions>({
             {
               text: '编程',
               collapsible: true,
-              children: ['/programming/programming-languages/'],
+
+              children: [
+                '/programming/programming-languages/',
+                '/programming/front-back-connect/',
+              ],
             },
 
             {
