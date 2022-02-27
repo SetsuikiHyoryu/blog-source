@@ -3,7 +3,7 @@ import type { DefaultThemeOptions } from 'vuepress'
 
 export default defineUserConfig<DefaultThemeOptions>({
   // 站点配置
-  port: 19769,
+  port: 6791,
   lang: 'zh-CN',
   title: '冰龍與雪風的工作室',
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
@@ -63,7 +63,11 @@ export default defineUserConfig<DefaultThemeOptions>({
             children: [
               {
                 text: '编程',
-                children: ['/programming/programming-languages/'],
+
+                children: [
+                  '/programming/programming-languages/',
+                  '/programming/front-back-connect/',
+                ],
               },
 
               {
@@ -85,7 +89,11 @@ export default defineUserConfig<DefaultThemeOptions>({
             {
               text: 'プログラミング',
               collapsible: true,
-              children: ['./programming/programming-languages/'],
+
+              children: [
+                './programming/programming-languages/',
+                './programming/front-back-connect/',
+              ],
             },
 
             {
@@ -103,7 +111,11 @@ export default defineUserConfig<DefaultThemeOptions>({
             children: [
               {
                 text: 'プログラミング',
-                children: ['/languages/ja/programming/programming-languages/'],
+
+                children: [
+                  '/languages/ja/programming/programming-languages/',
+                  '/languages/ja/programming/front-back-connect/',
+                ],
               },
 
               {

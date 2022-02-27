@@ -1,58 +1,58 @@
 ---
-lang: zh-CN
-description: sample
+lang: ja
+description: axios と Apollo で GraphQL を学習する
 
 sidebar:
-  - text: 上一级
-    link: /programming/front-back-connect/
+  - text: 戻る
+    link: ../../front-back-connect/
   
-  - /programming/front-back-connect/graphql/vue-express-graphql.md
+  - ./axios-apollo-graphql.md
 ---
 
-# 使用 axios 和 Apollo 学习 GraphQL
+# axios と Apollo で GraphQL を学習する
 
-## 技术栈
+## 技術スタック
 
-|技术栈|应用位置|说明
+|技術スタック|応用範囲|説明|
 |-|-|-|
-|TypeScript|客戸端 / 服务端|语言|
-|Vue3|客戸端|JavaScript 框架|
-|Vite|客戸端|Vue 框架|
-|axios|客戸端|HTTP 请求实现|
-|GraphQL|客戸端 / 服务端|前后端间数据查询语言|
-|Express|服务端|Node 框架|
-|Apollo|服务端|GraphQL 服务端实现|
-|Mongoose|服务端|基于 MongoDB 数据建模实现|
-|MongoDB|数据库|非关系型数据库|
-|Docker|程序管理平台|本项目将 MongoDB 装在其中|
+|TypeScript|クライアント側 / サーバー側|言語|
+|Vue3|クライアント側|JavaScript フレームワーク|
+|Vite|クライアント側|Vue フレームワーク|
+|axios|クライアント側|HTTP リクエストの実現|
+|GraphQL|クライアント側 / サーバー側|クライアント、サーバー間データクエリ言語|
+|Express|サーバー側|Node フレームワーク|
+|Apollo|サーバー側|GraphQL サーバー側実現|
+|Mongoose|サーバー側|MongoDB に基づいたデータモデル定義実現|
+|MongoDB|データベース|ドキュメント指向データベース|
+|Docker|アプリケーション管理プラットフォーム|本プロジェクトは MongoDB を Docker の中に入れている|
 
-## 代码仓库
+## ソース倉庫
 
-- [客戸端](https://github.com/SetsuikiHyoryu/vue3_study_comprehensive)
-- [服务端](https://github.com/SetsuikiHyoryu/vue3_study_comprehensive_server)
+- [クライアント側](https://github.com/SetsuikiHyoryu/vue3_study_comprehensive)
+- [サーバー側](https://github.com/SetsuikiHyoryu/vue3_study_comprehensive_server)
 
-## 使用 Vite 创建 Vue 项目
+## Vite で Vue プロジェクトを作成
 
-vite 官网：<https://cn.vitejs.dev/guide/>
+vite ホームページ：<https://ja.vitejs.dev/guide/>
 
-### 使用 axios
+### axios を使用
 
-axios 官网：<https://github.com/axios/axios>
+axios ホームページ：<https://github.com/axios/axios>
 
-#### 1. 创建 axios 实例并封装 axios
+#### 1. axios インスタンスの作成及び axios をパッケージング
 
 ```typescript
 // src/utils/http/axios/index.ts
 
 import axios from 'axios'
 
-// 1. 创建 axios 实例
+// 1. axios インスタンスを作成
 const axiosInstance = axios.create({
   baseURL: 'http://localhost:3000/api',
   timeout: 1000,
 })
 
-// 2. 封裝 axios 请求
+// 2. axios リクエストをパッケージング
 export const sendRequest = async (
   query: string,
   variables?: { [property: string]: any }
@@ -67,9 +67,9 @@ export const sendRequest = async (
 }
 ```
 
-#### 2. 创建 API
+#### 2. API を作成
 
-1. 创建参数与返回值模型
+1. パラメータ及び戻り値のモデルを作成
 
    ```typescript
    // src/api/model/works.ts
@@ -91,7 +91,7 @@ export const sendRequest = async (
 
    ```
 
-2. 创建 API
+2. API を作成
 
    ```typescript
    // src/api/works.ts
@@ -132,7 +132,7 @@ export const sendRequest = async (
 
    ```
 
-#### 3. 在画面中调用 API
+#### 3. 画面で API をコール
 
 ```vue
 <!-- src/App.vue -->
@@ -293,15 +293,15 @@ input {
 
 ## 安装 GraphQL、Apollo、Express
 
-流程手册：<https://graphql.org/code/#javascript>
+流れの冊子：<https://graphql.org/code/#javascript>
 
-### 使用 Express
+### Express を使用
 
-express 官网：<https://expressjs.com/>
+express ホームページ：<https://expressjs.com/>
 
-#### 1. 创建服务
+#### 1. サーバーを作成
 
-1. 创建 src/app.ts
+1. src/app.ts を作成
 
    ```typescript
    // src\app.ts
@@ -314,7 +314,7 @@ express 官网：<https://expressjs.com/>
    export default app
    ```
 
-2. 创建 src/server.ts
+2. src/server.ts を作成
 
    ```typescript
    // src\server.ts
@@ -332,13 +332,13 @@ express 官网：<https://expressjs.com/>
    })
    ```
 
-3. 启动服务后如果能从 localhost 访问到 `successed` 即为成功。
+3. 起動後に localhost に `successed` が表示されたら成功。
 
-#### 2. 使用 Apollo
+#### 2. Apollo を使用
 
-Apollo 官网：<https://www.apollographql.com/docs/apollo-server/getting-started/>
+Apollo ホームページ：<https://www.apollographql.com/docs/apollo-server/getting-started/>
 
-1. 创建类型：src/schemas/typeDefs.ts
+1. 型を作成：src/schemas/typeDefs.ts
 
    ```typescript
    // src\schemas\typeDefs.ts
@@ -360,7 +360,7 @@ Apollo 官网：<https://www.apollographql.com/docs/apollo-server/getting-starte
 
    ```
 
-2. 创建解析器：src/schemas/resolvers
+2. 解析機を作成：src/schemas/resolvers
 
    ```typescript
    // src\schemas\resolvers.ts
@@ -383,7 +383,7 @@ Apollo 官网：<https://www.apollographql.com/docs/apollo-server/getting-starte
 
    ```
 
-3. 创建 Apollo 服务器实例
+3. Apollo サーバーインスタンスを作成
 
    ```typescript
    // src\app.ts
@@ -408,7 +408,7 @@ Apollo 官网：<https://www.apollographql.com/docs/apollo-server/getting-starte
    export { app, httpServer, server }
    ```
 
-4. 启动 Apollo 服务器
+4. Apollo サーバーを起動
 
    ```typescript
    // src\server.ts
@@ -434,20 +434,20 @@ Apollo 官网：<https://www.apollographql.com/docs/apollo-server/getting-starte
 
    ```
 
-## 使用 MongoDB
+## MongoDB を使用
 
-### 1. 在 Docker 上安装 MongoDB
+### 1. Docker で MongoDB をインストール
 
-- 需要进行用戸管理，否则没有权限
+- ユーザーの管理無しでは一部のアクセス権限が無いので管理が必要
 - [Docker 安装 MongoDB](https://www.runoob.com/docker/docker-install-mongodb.html)
 - [MongoDB用户权限管理配置](https://www.cnblogs.com/yucongblog/p/6595946.html)
 - [MongoDB数据库、集合、文档的操作](https://www.cnblogs.com/yucongblog/p/6636112.html)
 
-### 2. 使用 mongoose 连接 MongoDB
+### 2. Mongoose で MongoDB に接続
 
-mongoose 官网：<https://mongoosejs.com/docs/index.html>
+Mongoose ホームページ：<https://mongoosejs.com/docs/index.html>
 
-#### 1. 创建 Model
+#### 1. Model を作成
 
 ```typescript
 // src\models\works.ts
@@ -478,7 +478,7 @@ export default WorkModel
 
 ```
 
-#### 2. 连接数据库
+#### 2. データベースに接続する
 
 ```typescript
 // src\models\index.ts
@@ -499,7 +499,7 @@ export { WorkModel }
 
 ```
 
-#### 3. 替换解析器的实现
+#### 3. 解析機の実現を替える
 
 ```typescript
 // src\schemas\resolvers.ts
