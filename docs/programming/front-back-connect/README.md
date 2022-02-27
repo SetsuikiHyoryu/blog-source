@@ -13,7 +13,7 @@ sidebar:
       - ./graphql/vue-express-graphql.md
 ---
 
-# 跑通前后端
+# 前后端连接
 
 ## GraphQL
 
