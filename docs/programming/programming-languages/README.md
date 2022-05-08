@@ -10,11 +10,11 @@ sidebar:
     collapsible: true
 
     children: 
-      - /programming/programming-languages/go/sample.md
+      - /programming/programming-languages/go/golang-study.md
 ---
 
 # 编程语言
 
 ## Go
 
-- [sample](./go/sample.md)
+- [Golang Study](./go/golang-study.md)
