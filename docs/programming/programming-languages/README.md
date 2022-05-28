@@ -11,6 +11,13 @@ sidebar:
 
     children: 
       - /programming/programming-languages/go/golang-study.md
+      
+  - text: JavaScript
+    collapsible: true
+    
+    children:
+      - text: Vue 
+        link: ./javascript/vue/
 ---
 
 # 编程语言
@@ -18,3 +25,9 @@ sidebar:
 ## Go
 
 - [Golang Study](./go/golang-study.md)
+
+## Javascript
+
+### Vue
+
+- [学习在 Vue3 中使用 useReducer](./javascript/vue/vue3_use-reducer.md)

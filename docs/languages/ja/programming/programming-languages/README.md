@@ -11,6 +11,13 @@ sidebar:
 
     children:
       - /languages/ja/programming/programming-languages/go/sample.md
+      
+  - text: JavaScript
+    collapsible: true
+    
+    children:
+      - text: Vue
+        link: ./javascript/vue/
 ---
 
 # プログラミング言語
@@ -18,3 +25,9 @@ sidebar:
 ## Go
 
 - [sample](./go/sample.md)
+
+## JavaScript
+
+### Vue
+
+- [Vue3 の中で useReducer を実装することを学習する](./javascript/vue/vue3_use-reducer.md)
