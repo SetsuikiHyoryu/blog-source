@@ -45,6 +45,8 @@ export default defineUserConfig<DefaultThemeOptions>({
               children: [
                 '/programming/programming-languages/',
                 '/programming/front-back-connect/',
+                '/programming/front-technology/',
+                '/programming/back-technology/',
               ],
             },
 
@@ -67,6 +69,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                 children: [
                   '/programming/programming-languages/',
                   '/programming/front-back-connect/',
+                  '/programming/front-technology/',
+                  '/programming/back-technology/',
                 ],
               },
 

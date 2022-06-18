@@ -1,0 +1,1 @@
+const t={key:"v-f941da20",path:"/programming/front-technology/",title:"\u524D\u7AEF\u6280\u672F",lang:"zh-CN",frontmatter:{lang:"zh-CN",descriptioin:"\u524D\u7AEF\u6280\u672F",sidebar:[{text:"\u4E0A\u4E00\u7EA7",link:"/"}]},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"programming/front-technology/README.md"};export{t as data};
