@@ -6,18 +6,7 @@ sidebar:
   - text: 上一级
     link: /
   
-  - text: Go
-    collapsible: true
-
-    children: 
-      - /programming/programming-languages/go/golang-study.md
-      
-  - text: JavaScript
-    collapsible: true
-    
-    children:
-      - text: Vue 
-        link: ./javascript/vue/
+  - ./README.md
 ---
 
 # 编程语言
@@ -31,3 +20,7 @@ sidebar:
 ### Vue
 
 - [学习在 Vue3 中使用 useReducer](./javascript/vue/vue3_use-reducer.md)
+
+## C\#
+
+- [创建 .Net Web API](./c-sharp/create-dotnet-web-api)

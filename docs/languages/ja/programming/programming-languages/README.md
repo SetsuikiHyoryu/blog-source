@@ -6,18 +6,7 @@ sidebar:
   - text: 戻る
     link: /languages/ja/
   
-  - text: Go
-    collapsible: true
-
-    children:
-      - /languages/ja/programming/programming-languages/go/sample.md
-      
-  - text: JavaScript
-    collapsible: true
-    
-    children:
-      - text: Vue
-        link: ./javascript/vue/
+  - ./README.md
 ---
 
 # プログラミング言語
