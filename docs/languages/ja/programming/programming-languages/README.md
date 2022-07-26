@@ -20,3 +20,7 @@ sidebar:
 ### Vue
 
 - [Vue3 の中で useReducer を実装することを学習する](./javascript/vue/vue3_use-reducer.md)
+
+## C\#
+
+- [コマンドラインで C\# を単体テスト（xUnit）](./c-sharp/c-sharp_unit-test_command-line.md)

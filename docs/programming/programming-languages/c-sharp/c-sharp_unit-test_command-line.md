@@ -12,7 +12,7 @@ sidebar:
 
 xUnit 单元测试官方文档：<https://docs.microsoft.com/zh-cn/dotnet/core/testing/unit-testing-with-dotnet-test>
 
-## 在已有的 solution 中创建 Tests 项目
+## 在已有的 solution 中创建测试项目
 
 ※ 从 0 新建 solution 的话请参见[官方文档](https://docs.microsoft.com/zh-cn/dotnet/core/testing/unit-testing-with-dotnet-test#create-the-solution)  
 ※ 通常既存的项目中已有人创建了单元测试的项目
@@ -123,13 +123,13 @@ dotnet test --collect:"XPlat Code Coverage"
 - `dotnet tool` 命令官网: <https://docs.microsoft.com/zh-cn/dotnet/core/tools/dotnet-tool-install>
 - 教程：使用 .NET CLI 安装和使用 .NET 本地工具：<https://docs.microsoft.com/zh-cn/dotnet/core/tools/local-tools-how-to-use>
 
-※ 全局安装比较简单，想装在全局的可以自行查看 ReportGenerator 官方仓库 的 [Getting started](https://github.com/danielpalme/ReportGenerator#install-the-package-matching-your-platform-and-needs)
+※ 全局安装比较简单，想装在全局的可以自行查看 ReportGenerator 官方仓库的 [Getting started](https://github.com/danielpalme/ReportGenerator#install-the-package-matching-your-platform-and-needs)
 
 ```shell
 # 创建 Dotnet 本地（当前目录）工具清单文件
 dotnet new tool-manifest
 
-# 在本地（当前目录）下安装 ReportGenerator
+# 在本地安装 ReportGenerator
 # 安装后将在当前目录生成 .config 目录及 dotnet-tools.json 文件
 dotnet tool install dotnet-reportgenerator-globaltool
 
@@ -142,7 +142,7 @@ dotnet tool run <Command>
 
 ※ 目录可以自定义
 
-1. 将 `./TestResults/<Hash>/` 下的文件 coverage.cobertura.xml 文件拖入 `./TestResults` 中
+1. 将 `./TestResults/<Hash>/` 下的 coverage.cobertura.xml 文件拖入 `./TestResults` 中
 
 2. 运行 ReportGenerator
 
@@ -152,3 +152,5 @@ dotnet tool run <Command>
    - targetdir:"./TestResults/coveragereport"
    - reporttypes:Html
    ```
+
+3. 打开 coveragereport/index.html 查看报表
