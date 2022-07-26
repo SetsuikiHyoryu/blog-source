@@ -38,7 +38,9 @@ dotnet new xunit --ooutput PrimeService.Tests
 
 ## 创建测试
 
-placeholder
+官方文档: <https://docs.microsoft.com/zh-cn/dotnet/core/testing/unit-testing-with-dotnet-test#create-a-test>
+
+※ 通常仿照项目中已有的测试写法即可
 
 ## 执行测试
 
@@ -93,6 +95,10 @@ public class MyTestClass
         output.WriteLine("This is output from {0}", temp);
     }
 }
+```
+
+```shell
+dotnet test --logger "console;verbosity=detailed"
 ```
 
 ## 使用 ReportGenerator 检查测试覆盖率
