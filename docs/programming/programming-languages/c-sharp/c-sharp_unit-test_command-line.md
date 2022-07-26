@@ -63,8 +63,7 @@ dotnet test --filter <Property><Operator><Value>[|&<Expression>]
 例，测试指定的文件：
 
 ```shell
-# 不指定到测试案例名则无效
-dotnet test --filter <NamseSpace>.<ClassName>.<TestName>
+dotnet test --filter <NamseSpace>.<ClassName>
 ```
 
 ## 打印输出内容
@@ -147,6 +146,7 @@ dotnet tool run <Command>
 2. 运行 ReportGenerator
 
    ```shell
+   # 安装在全局的话指令前不需要加 `dotnet tool run`
    dotnet tool run reportgenerator
    - reports:"./TestResults/coverage.cobertura.xml"
    - targetdir:"./TestResults/coveragereport"

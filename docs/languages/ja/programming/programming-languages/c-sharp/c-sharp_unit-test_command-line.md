@@ -15,7 +15,7 @@ xUnit 単体テスト公式ドキュメント：<https://docs.microsoft.com/ja/d
 ## 既存の solution でテストプロジェクトを作成
 
 ※ 0 から solution を作成する場合は[公式ドキュメント](https://docs.microsoft.com/ja/dotnet/core/testing/unit-testing-with-dotnet-test#create-the-solution)  を参照してください  
-※ 既存のプロジェクトであれば通常は作成済みのテストプロジェクトが存在する 
+※ 既存のプロジェクトであれば通常は作成済みのテストプロジェクトが存在する
 
 ```shell
 # -o|--output <OUTPUT_DIRECTORY>
@@ -63,8 +63,7 @@ dotnet test --filter <Property><Operator><Value>[|&<Expression>]
 指定するテストファイルを実行する例：
 
 ```shell
-# ケースまでに指定しないと無効
-dotnet test --filter <NamseSpace>.<ClassName>.<TestName>
+dotnet test --filter <NamseSpace>.<ClassName>
 ```
 
 ## コマンドラインで出力を捕捉
@@ -147,6 +146,7 @@ dotnet tool run <Command>
 2. ReportGenerator を実行する
 
    ```shell
+   # グローバルにインストールした場合は命令の前に `dotnet tool run` を付ける必要はない
    dotnet tool run reportgenerator
    - reports:"./TestResults/coverage.cobertura.xml"
    - targetdir:"./TestResults/coveragereport"
