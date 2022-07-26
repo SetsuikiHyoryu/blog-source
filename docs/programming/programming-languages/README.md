@@ -24,3 +24,4 @@ sidebar:
 ## C\#
 
 - [创建 .Net Web API](./c-sharp/create-dotnet-web-api)
+- [命令行单元测试 C#（xUnit）](./c-sharp/c-sharp_unit-test_command-line.md)
