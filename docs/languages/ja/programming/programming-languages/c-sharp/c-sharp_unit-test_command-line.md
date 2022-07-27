@@ -20,7 +20,7 @@ xUnit 単体テスト公式ドキュメント：<https://docs.microsoft.com/ja/d
 ```shell
 # -o|--output <OUTPUT_DIRECTORY>
 # 作成内容の出力箇所、デフォルトは現在のフォルダ
-dotnet new xunit --ooutput PrimeService.Tests
+dotnet new xunit --output PrimeService.Tests
 ```
 
 単体テストプロジェクトを含んでいる solution の例：

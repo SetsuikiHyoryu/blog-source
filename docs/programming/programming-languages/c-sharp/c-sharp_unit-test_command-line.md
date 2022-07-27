@@ -20,7 +20,7 @@ xUnit 单元测试官方文档：<https://docs.microsoft.com/zh-cn/dotnet/core/t
 ```shell
 # -o|--output <OUTPUT_DIRECTORY>
 # 生成内容的输出位置，默认为当前文件夹
-dotnet new xunit --ooutput PrimeService.Tests
+dotnet new xunit --output PrimeService.Tests
 ```
 
 一个包含了单元测试项目的 solution：
