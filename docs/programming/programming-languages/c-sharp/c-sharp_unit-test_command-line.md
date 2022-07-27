@@ -147,9 +147,9 @@ dotnet tool run <Command>
 
    ```shell
    # 安装在全局的话指令前不需要加 `dotnet tool run`
-   dotnet tool run reportgenerator
-   -reports:"./TestResults/coverage.cobertura.xml"
-   -targetdir:"./TestResults/coveragereport"
+   dotnet tool run reportgenerator `
+   -reports:"./TestResults/coverage.cobertura.xml" `
+   -targetdir:"./TestResults/coveragereport" `
    -reporttypes:Html
    ```
 

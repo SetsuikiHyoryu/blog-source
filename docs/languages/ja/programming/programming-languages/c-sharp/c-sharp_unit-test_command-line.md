@@ -147,9 +147,9 @@ dotnet tool run <Command>
 
    ```shell
    # グローバルにインストールした場合は命令の前に `dotnet tool run` を付ける必要はない
-   dotnet tool run reportgenerator
-   -reports:"./TestResults/coverage.cobertura.xml"
-   -targetdir:"./TestResults/coveragereport"
+   dotnet tool run reportgenerator `
+   -reports:"./TestResults/coverage.cobertura.xml" `
+   -targetdir:"./TestResults/coveragereport" `
    -reporttypes:Html
    ```
 
