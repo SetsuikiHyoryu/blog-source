@@ -6,7 +6,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy:linux": "bash deploy.sh"
   },
   "author": "雪域冰龍",
   "license": "ISC",
