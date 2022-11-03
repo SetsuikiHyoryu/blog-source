@@ -47,6 +47,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 '/programming/front-back-connect/',
                 '/programming/front-technology/',
                 '/programming/back-technology/',
+                '/programming/database',
               ],
             },
 
@@ -71,6 +72,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                   '/programming/front-back-connect/',
                   '/programming/front-technology/',
                   '/programming/back-technology/',
+                  '/programming/database',
                 ],
               },
 
@@ -97,6 +99,9 @@ export default defineUserConfig<DefaultThemeOptions>({
               children: [
                 './programming/programming-languages/',
                 './programming/front-back-connect/',
+                './programming/front-technology/',
+                './programming/back-technology/',
+                './programming/database',
               ],
             },
 
@@ -119,6 +124,9 @@ export default defineUserConfig<DefaultThemeOptions>({
                 children: [
                   '/languages/ja/programming/programming-languages/',
                   '/languages/ja/programming/front-back-connect/',
+                  '/languages/ja/programming/front-technology/',
+                  '/languages/ja/programming/back-technology/',
+                  '/languages/ja/programming/database/',
                 ],
               },
 
