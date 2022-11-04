@@ -3,6 +3,7 @@ import type { DefaultThemeOptions } from 'vuepress'
 
 export default defineUserConfig<DefaultThemeOptions>({
   // 站点配置
+  base: '/',
   port: 6791,
   lang: 'zh-CN',
   title: '冰龍與雪風的工作室',
